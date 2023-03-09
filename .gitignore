@@ -1,0 +1,4 @@
+#fuck .DS_Store
+**/*.DS_Store
+.DS_Store
+.todo
