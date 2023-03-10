@@ -1,0 +1,24 @@
+global record TodoItem
+    name:       string
+    synopsis:   string
+    done:       bool
+end
+
+global record TodoList
+    title:      string
+    description:string
+    items:      { string : TodoItem }
+
+    create:         function(title: string, desc: string): TodoList
+    from_file:      function(file: File): TodoList
+
+    add_item:       function(self: TodoList, name: string, item: TodItem): TodoList
+    remove_item:    function(self: TodoList, name: string): TodoList
+    get_item:       function(self: TodoList, name: string): TodoItem
+    complete_item:  function(self: TodoList, name: string): TodoList
+    uncomplete_item:function(self: TodoList, name: string): TodoList
+    save:           function(self: TodoList, file: File): TodoList
+
+    serialize:      function(self: TodoList): string
+    deserialize:    function(data: string): TodoList
+end

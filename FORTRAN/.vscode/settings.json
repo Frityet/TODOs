@@ -1,0 +1,6 @@
+{
+    "fortran.linter.includePaths": [
+        "${workspaceFolder}/src",
+        "${workspaceFolder}/build/gfortran_2A42023B310FA28D",
+    ]
+}

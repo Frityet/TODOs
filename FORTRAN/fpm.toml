@@ -1,0 +1,13 @@
+name = "TODO"
+version = "0.1.0"
+license = "GPLv4"
+author = "Amrit Bhogal"
+copyright = "Copyright 2023, Amrit Bhogal"
+[build]
+auto-executables = true
+[install]
+library = false
+
+[dependencies]
+stdlib.git = "https://github.com/fortran-lang/stdlib"
+stdlib.branch = "stdlib-fpm"
